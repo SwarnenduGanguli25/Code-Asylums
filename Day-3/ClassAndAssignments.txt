@@ -1,0 +1,15 @@
+//Assignment
+https://www.interviewbit.com/problems/add-one-to-number/ 
+https://www.hackerrank.com/challenges/kangaroo/problem 
+https://www.hackerrank.com/challenges/between-two-sets/problem 
+https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem 
+https://www.hackerrank.com/challenges/the-birthday-bar/problem 
+https://www.hackerrank.com/challenges/divisible-sum-pairs/problem 
+https://www.hackerrank.com/challenges/apple-and-orange/problem 
+
+
+//Completed
+https://www.interviewbit.com/problems/add-one-to-number/ 
+https://www.hackerrank.com/challenges/sock-merchant/problem 
+https://www.hackerrank.com/challenges/grading/problem 
+https://www.hackerrank.com/challenges/apple-and-orange/problem 
