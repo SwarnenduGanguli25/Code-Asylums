@@ -1,0 +1,28 @@
+Prob 1 : Move last m elements to the front of a given Linked List
+Given the head of a Singly Linked List and a value m, the task is to move the last m elements to the front. 
+Input: 0->1->2->3->4->5 ; m = 4
+Output: 2->3->4->5->0->1 
+
+Prob 2 :
+Difference of two Linked Lists using Merge sort
+Given two Linked List, the task is to create a Linked List to store the difference of Linked List 1 with Linked List 2, i.e. the elements present in List 1 but not in List 2. 
+Input:
+List1: 10 -> 15 -> 4 ->20,
+List2: 8 -> 4 -> 2 -> 10
+Output: 15 -> 20
+Explanation:
+In the given linked list elements 15 and 20 are present in the list 1 but not in list 2. 
+
+Prob 3 - 
+Count of Nodes in a LinkedList whose value is equal to their frequency
+Given a Singly linked list, the task is to count the number of nodes whose data value is equal to its frequency.
+Examples:
+Input: Linked list = 2 -> 3 -> 3 -> 3 -> 4 -> 2
+Output: 2
+Frequency of element 2 is 2
+Frequency of element 3 is 3
+Frequency of element 4 is 1
+So, 2 and 3 are elements which have same frequency as it’s value
+
+Input: Linked list = 1 -> 2 -> 3 -> 4 -> 5 -> 6
+Output: 1 

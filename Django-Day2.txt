@@ -1,0 +1,809 @@
+(base) sai-girish@saigirish-Inspiron-5559:~$ ls
+ anaconda3                    Scatter_Plot.png
+ Android                      snap
+ AndroidStudioProjects        spark-3.0.0-preview-bin-hadoop2.7
+ arcore-android-sdk           Templates
+'C Compiler 2nd Submission'   ud120-projects
+ Desktop                      Untitled10.ipynb
+ Documents                    Untitled11.ipynb
+ Downloads                    Untitled12.ipynb
+ dwhelper                     Untitled1.ipynb
+ eclipse-workspace            Untitled2.ipynb
+ examples.desktop             Untitled3.ipynb
+ flutter                      Untitled4.ipynb
+ Histogram_demo.png           Untitled5.ipynb
+ linux_signing_key.pub        Untitled6.ipynb
+ Music                        Untitled7.ipynb
+ online_class                 Untitled8.ipynb
+ Pictures                     Untitled9.ipynb
+ Public                       Untitled.ipynb
+ R                            Videos
+ rstudio-1.2.5019-amd64.deb
+(base) sai-girish@saigirish-Inspiron-5559:~$ cd online_class/
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class$ ls
+online_class_env  online_class_project
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class$ cd online_class_env/
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_env$ ls
+bin  lib  pyvenv.cfg
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_env$ cd bin/
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_env/bin$ ls
+activate          django-admin      pip3         python3.7
+activate.csh      django-admin.py   pip-3.7      sqlformat
+activate.fish     easy_install      pip3.7       wheel
+activate.ps1      easy_install3     __pycache__  wheel3
+activate_this.py  easy_install-3.7  python       wheel-3.7
+activate.xsh      pip               python3
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_env/bin$ cd ..
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_env$ ls
+bin  lib  pyvenv.cfg
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_env$ cd ..
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class$ ls
+online_class_env  online_class_project
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class$ cd online_class_project/
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ ls
+db.sqlite3  manage.py  online_class_project
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ django --version
+django: command not found
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ ls
+db.sqlite3  manage.py  online_class_project
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ django-admin startapp online_class_app
+
+Command 'django-admin' not found, but can be installed with:
+
+sudo apt install python-django-common
+
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ sudo apt install python-django-common
+[sudo] password for sai-girish: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libllvm8 libspandsp2 libwireshark11 libwireshark12 libwiretap8
+  libwiretap9 libwscodecs2 libwsutil10 libwsutil9
+  linux-headers-4.15.0-76 linux-headers-4.15.0-76-generic
+  linux-image-4.15.0-76-generic linux-modules-4.15.0-76-generic
+  linux-modules-extra-4.15.0-76-generic
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  python-django-common
+0 upgraded, 1 newly installed, 0 to remove and 24 not upgraded.
+Need to get 1,522 kB of archives.
+After this operation, 16.6 MB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python-django-common all 1:1.11.11-1ubuntu1.8 [1,522 kB]
+Fetched 1,522 kB in 2s (703 kB/s)                 
+Selecting previously unselected package python-django-common.
+(Reading database ... 240933 files and directories currently installed.)
+Preparing to unpack .../python-django-common_1%3a1.11.11-1ubuntu1.8_all.deb ...
+Unpacking python-django-common (1:1.11.11-1ubuntu1.8) ...
+Setting up python-django-common (1:1.11.11-1ubuntu1.8) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ django-admin startapp online_class_app
+Cannot find installed version of python-django or python3-django.
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ cd ..
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class$ ls
+online_class_env  online_class_project
+(base) sai-girish@saigirish-Inspiron-5559:~/online_class$ source online_class_env/bin/activate
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class$ ls
+online_class_env  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class$ cd online_class_project/
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ ls
+db.sqlite3  manage.py  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ django-admin startapp online_class_app
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ ls
+db.sqlite3  manage.py  online_class_app  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ cd online_class_app/
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project/online_class_app$ ls
+admin.py  apps.py  __init__.py  migrations  models.py  tests.py  views.py
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project/online_class_app$ cd ..
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ ls
+db.sqlite3  manage.py  online_class_app  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ cd ../..
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~$ ls
+ anaconda3                    Scatter_Plot.png
+ Android                      snap
+ AndroidStudioProjects        spark-3.0.0-preview-bin-hadoop2.7
+ arcore-android-sdk           Templates
+'C Compiler 2nd Submission'   ud120-projects
+ Desktop                      Untitled10.ipynb
+ Documents                    Untitled11.ipynb
+ Downloads                    Untitled12.ipynb
+ dwhelper                     Untitled1.ipynb
+ eclipse-workspace            Untitled2.ipynb
+ examples.desktop             Untitled3.ipynb
+ flutter                      Untitled4.ipynb
+ Histogram_demo.png           Untitled5.ipynb
+ linux_signing_key.pub        Untitled6.ipynb
+ Music                        Untitled7.ipynb
+ online_class                 Untitled8.ipynb
+ Pictures                     Untitled9.ipynb
+ Public                       Untitled.ipynb
+ R                            Videos
+ rstudio-1.2.5019-amd64.deb
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~$ cd online_class/
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class$ ls
+online_class_env  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class$ ls
+online_class_env  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class$ cd online_class_project/
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ ls
+db.sqlite3  manage.py  online_class_app  online_class_project
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/sai-girish/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/models.py", line 4, in <module>
+    class OnlineClass(models.Model) :
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/models.py", line 8, in OnlineClass
+    address = models.TextField(null = True, allow_blank = True)
+TypeError: __init__() got an unexpected keyword argument 'allow_blank'
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/__init__.py", line 377, in execute
+    django.setup()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/sai-girish/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/models.py", line 4, in <module>
+    class OnlineClass(models.Model) :
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/models.py", line 8, in OnlineClass
+    address = models.TextField(null = True, allow_blank = True)
+TypeError: __init__() got an unexpected keyword argument 'allow_blank'
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py makemigrations
+Migrations for 'online_class_app':
+  online_class_app/migrations/0001_initial.py
+    - Create model OnlineClass
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, online_class_app, sessions
+Running migrations:
+  Applying online_class_app.0001_initial... OK
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ pip install ipython
+Collecting ipython
+  Downloading ipython-7.13.0-py3-none-any.whl (780 kB)
+     |████████████████████████████████| 780 kB 259 kB/s 
+Collecting decorator
+  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting pexpect; sys_platform != "win32"
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+     |████████████████████████████████| 59 kB 271 kB/s 
+Collecting jedi>=0.10
+  Downloading jedi-0.17.0-py2.py3-none-any.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 439 kB/s 
+Collecting traitlets>=4.2
+  Using cached traitlets-4.3.3-py2.py3-none-any.whl (75 kB)
+Requirement already satisfied: setuptools>=18.5 in /home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages (from ipython) (46.1.3)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting pygments
+  Downloading Pygments-2.6.1-py3-none-any.whl (914 kB)
+     |████████████████████████████████| 914 kB 728 kB/s 
+Collecting backcall
+  Using cached backcall-0.1.0.tar.gz (9.7 kB)
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Downloading prompt_toolkit-3.0.5-py3-none-any.whl (351 kB)
+     |████████████████████████████████| 351 kB 968 kB/s 
+Collecting ptyprocess>=0.5
+  Using cached ptyprocess-0.6.0-py2.py3-none-any.whl (39 kB)
+Collecting parso>=0.7.0
+  Downloading parso-0.7.0-py2.py3-none-any.whl (100 kB)
+     |████████████████████████████████| 100 kB 501 kB/s 
+Collecting ipython-genutils
+  Using cached ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting six
+  Using cached six-1.14.0-py2.py3-none-any.whl (10 kB)
+Collecting wcwidth
+  Downloading wcwidth-0.1.9-py2.py3-none-any.whl (19 kB)
+Building wheels for collected packages: backcall
+  Building wheel for backcall (setup.py) ... done
+  Created wheel for backcall: filename=backcall-0.1.0-py3-none-any.whl size=10413 sha256=0befe2418ac61a9b1206a313a873de406aaa525ebe6539cbdd39338cb146473a
+  Stored in directory: /home/sai-girish/.cache/pip/wheels/9e/56/4f/da13e448a8a5b8671b2954600d5355cf36e557c7aa5020139b
+Successfully built backcall
+Installing collected packages: decorator, ptyprocess, pexpect, parso, jedi, ipython-genutils, six, traitlets, pickleshare, pygments, backcall, wcwidth, prompt-toolkit, ipython
+Successfully installed backcall-0.1.0 decorator-4.4.2 ipython-7.13.0 ipython-genutils-0.2.0 jedi-0.17.0 parso-0.7.0 pexpect-4.8.0 pickleshare-0.7.5 prompt-toolkit-3.0.5 ptyprocess-0.6.0 pygments-2.6.1 six-1.14.0 traitlets-4.3.3 wcwidth-0.1.9
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/home/sai-girish/online_class/online_class_env/bin/python -m pip install --upgrade pip' command.
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ pip freeze
+asgiref==3.2.7
+backcall==0.1.0
+decorator==4.4.2
+Django==3.0.5
+djangorestframework==3.11.0
+ipython==7.13.0
+ipython-genutils==0.2.0
+jedi==0.17.0
+parso==0.7.0
+pexpect==4.8.0
+pickleshare==0.7.5
+prompt-toolkit==3.0.5
+ptyprocess==0.6.0
+Pygments==2.6.1
+pytz==2020.1
+six==1.14.0
+sqlparse==0.3.1
+traitlets==4.3.3
+wcwidth==0.1.9
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py shell
+Python 3.7.4 (default, Aug 13 2019, 20:35:49) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from online_class_app.models import OnlineClass                   
+
+In [2]: OnlineClass.objects.all()                                         
+Out[2]: <QuerySet []>
+
+In [3]: online_class_obj_data = { 
+   ...: "name" : "Girish", 
+   ...: "age" : 20, 
+   ...: "avg_marks" : 91.2, 
+   ...: "address" : "Door No. 40, Infantry Road, Ballari, karnataka, India" 
+   ...: }                                                                    
+
+In [4]: OnlineClass.objects.create(**online_class_obj_
+   ...: data)                                         
+Out[4]: <OnlineClass: OnlineClass object (1)>
+
+In [5]: OnlineClass.objects.all()                     
+Out[5]: <QuerySet [<OnlineClass: OnlineClass object (1)>]>
+
+In [6]: online_class_obj_data = { 
+   ...: "name" : "Srikanth", 
+   ...: "age" : 26, 
+   ...: "avg_marks" : 81.2, 
+   ...: "address" : "Door No. 96, Infantry Road, Balla
+   ...: ri, karnataka, India" 
+   ...: }                                             
+
+In [7]: OnlineClass.objects.create(**online_class_obj_
+   ...: data)                                         
+Out[7]: <OnlineClass: OnlineClass object (2)>
+
+In [8]: OnlineClass.objects.all()                     
+Out[8]: <QuerySet [<OnlineClass: OnlineClass object (1)>, <OnlineClass: OnlineClass object (2)>]>
+
+In [9]: objects = OnlineClass.objects.all( 
+   ...: )                                             
+
+In [10]: objects                                      
+Out[10]: <QuerySet [<OnlineClass: OnlineClass object (1)>, <OnlineClass: OnlineClass object (2)>]>
+
+In [11]: objects[0]                                   
+Out[11]: <OnlineClass: OnlineClass object (1)>
+
+In [12]: first_object = objects[0]                    
+
+In [13]: first_object                                 
+Out[13]: <OnlineClass: OnlineClass object (1)>
+
+In [14]: first_object.name                            
+Out[14]: 'Girish'
+
+In [15]: first_object.age                             
+Out[15]: 20
+
+In [16]: first_object.avg_marks                       
+Out[16]: 91.2
+
+In [17]: first_object.address                         
+Out[17]: 'Door No. 40, Infantry Road, Ballari, karnataka, India'
+
+In [18]: filtering_objects = OnlineClass.objects.filter(avg_marks__
+    ...: gte=90)                                                   
+
+In [19]: filtering_objects                                         
+Out[19]: <QuerySet [<OnlineClass: OnlineClass object (1)>]>
+
+In [20]: filtering_objects = OnlineClass.objects.filter(avg_marks__
+    ...: isnull = False)                                           
+
+In [21]: filtering_objects                                         
+Out[21]: <QuerySet [<OnlineClass: OnlineClass object (1)>, <OnlineClass: OnlineClass object (2)>]>
+
+In [22]: filtering_objects[1]                                      
+Out[22]: <OnlineClass: OnlineClass object (2)>
+
+In [23]: to_be_deleted = filtering_objects[1]                      
+
+In [24]: to_be_deleted                                             
+Out[24]: <OnlineClass: OnlineClass object (2)>
+
+In [25]: to_be_deleted.delete()                                    
+Out[25]: (1, {'online_class_app.OnlineClass': 1})
+
+In [26]: OnlineClass.objects.all()                                 
+Out[26]: <QuerySet [<OnlineClass: OnlineClass object (1)>]>
+
+In [27]: objs = OnlineClass.objects.all()                          
+
+In [28]: objs                                                      
+Out[28]: <QuerySet [<OnlineClass: OnlineClass object (1)>]>
+
+In [29]: obj = objs[0]                                             
+
+In [30]: obj                                                       
+Out[30]: <OnlineClass: OnlineClass object (1)>
+
+In [31]: obj.name                                                  
+Out[31]: 'Girish'
+
+In [32]: obj.age                                                   
+Out[32]: 20
+
+In [33]: obj.age = 21                                              
+
+In [34]: objs = OnlineClass.objects.all()                          
+
+In [35]: obj = objs[0]                                             
+
+In [36]: obj.age                                                   
+Out[36]: 20
+
+In [37]: obj.age = 21                                              
+
+In [38]: obj.save()                                                
+
+In [39]: objs = OnlineClass.objects.all()                          
+
+In [40]: obj = objs[0]                                             
+
+In [41]: obj.age                                                   
+Out[41]: 21
+
+In [42]: exit                                                      
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py shell
+Python 3.7.4 (default, Aug 13 2019, 20:35:49) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from online_class_app.serializers import OnlineClassSeriali
+   ...: zer                                                        
+
+In [2]: from online_class_app.models import OnlineClass            
+
+In [3]: online_class_obj_data = { 
+   ...: "name" : "Abc", 
+   ...: "age" : 19, 
+   ...: "avg_marks" : 81.2, 
+   ...: "address" : "Kora, Bangalore" 
+   ...: }                                                          
+
+In [4]: serializer = OnlineClassSerializer(data = online_class_obj_
+   ...: data)                                                      
+
+In [5]: serializer                                                 
+Out[5]: 
+OnlineClassSerializer(data={'name': 'Abc', 'age': 19, 'avg_marks': 81.2, 'address': 'Kora, Bangalore'}):
+    name = CharField(required=True)
+    age = IntegerField(required=False)
+    avg_marks = FloatField(required=False)
+    address = CharField(required=False)
+
+In [6]: serializer.is_valid()                                      
+Out[6]: True
+
+In [7]: online_class_obj_data = { 
+   ...: "name" : None_, 
+   ...: "age" : 19, 
+   ...: "avg_marks" : 81.2, 
+   ...: "address" : "Kora, Bangalore" 
+   ...: }                                                          
+-------------------------------------------------------------------
+NameError                         Traceback (most recent call last)
+<ipython-input-7-09fe2ade80c8> in <module>
+      1 online_class_obj_data = {
+----> 2 "name" : None_,
+      3 "age" : 19,
+      4 "avg_marks" : 81.2,
+      5 "address" : "Kora, Bangalore"
+
+NameError: name 'None_' is not defined
+
+In [8]: online_class_obj_data = { 
+   ...: "name" : None, 
+   ...: "age" : 19, 
+   ...: "avg_marks" : 81.2, 
+   ...: "address" : "Kora, Bangalore" 
+   ...: }                                                          
+
+In [9]: serializer                                                 
+Out[9]: 
+OnlineClassSerializer(data={'name': 'Abc', 'age': 19, 'avg_marks': 81.2, 'address': 'Kora, Bangalore'}):
+    name = CharField(required=True)
+    age = IntegerField(required=False)
+    avg_marks = FloatField(required=False)
+    address = CharField(required=False)
+
+In [10]: serializer = OnlineClassSerializer(data = online_class_obj
+    ...: _data)                                                    
+
+In [11]: serializer.is_valid()                                     
+Out[11]: False
+
+In [12]: online_class_obj_data = { 
+    ...: "name" : "Abc", 
+    ...: "age" : None, 
+    ...: "avg_marks" : 81.2, 
+    ...: "address" : "Kora, Bangalore" 
+    ...: }                                                         
+
+In [13]: serializer = OnlineClassSerializer(data = online_class_obj
+    ...: _data)                                                    
+
+In [14]: serializer.is_valid()                                     
+Out[14]: False
+
+In [15]: online_class_obj_data = { 
+    ...: "name" : "Abc", 
+    ...: "avg_marks" : 81.2, 
+    ...: "address" : "Kora, Bangalore" 
+    ...: }                                                         
+
+In [16]: serializer = OnlineClassSerializer(data = online_class_obj
+    ...: _data)                                                    
+
+In [17]: serializer.is_valid()                                     
+Out[17]: True
+
+In [18]: online_class_obj_data = { 
+    ...: "avg_marks" : 81.2, 
+    ...: "address" : "Kora, Bangalore" 
+    ...: }                                                         
+
+In [19]: serializer = OnlineClassSerializer(data = online_class_obj
+    ...: _data)                                                    
+
+In [20]: serializer.is_valid()                                     
+Out[20]: False
+
+In [21]: online_class_obj_data = { 
+    ...: "name" : "Abc", 
+    ...: "avg_marks" : 81.2, 
+    ...: "address" : "Kora, Bangalore" 
+    ...: }                                                         
+
+In [22]: serializer = OnlineClassSerializer(data = online_class_obj
+    ...: _data)                                                    
+
+In [23]: serializer.is_valid()                                     
+Out[23]: True
+
+In [24]: serializer.validated_data                                 
+Out[24]: 
+OrderedDict([('name', 'Abc'),
+             ('avg_marks', 81.2),
+             ('address', 'Kora, Bangalore')])
+
+In [25]: OnlineClass.objects.create(**serializer.validated_data)   
+Out[25]: <OnlineClass: OnlineClass object (3)>
+
+In [26]: objs = OnlineClass.objects.all()                          
+
+In [27]: objs                                                      
+Out[27]: <QuerySet [<OnlineClass: OnlineClass object (1)>, <OnlineClass: OnlineClass object (3)>]>
+
+In [28]: online_class_obj_data = { 
+    ...: "avg_marks" : 81.2, 
+    ...: "address" : "Kora, Bangalore" 
+    ...: }                                                         
+
+In [29]: serializer = OnlineClassSerializer(data = online_class_obj
+    ...: _data)                                                    
+
+In [30]: serializer.is_valid()                                     
+Out[30]: False
+
+In [31]: serializer.validated_data                                 
+Out[31]: {}
+
+In [32]: exit                                                      
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 01, 2020 - 14:45:32
+Django version 3.0.5, using settings 'online_class_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /
+[01/May/2020 14:45:37] "GET / HTTP/1.1" 404 2330
+Not Found: /favicon.ico
+[01/May/2020 14:45:38] "GET /favicon.ico HTTP/1.1" 404 2381
+[01/May/2020 14:47:56] "GET /OnlineClass HTTP/1.1" 301 0
+[01/May/2020 14:47:57] "GET /OnlineClass/ HTTP/1.1" 200 14108
+[01/May/2020 14:47:57] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[01/May/2020 14:47:57] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[01/May/2020 14:47:57] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[01/May/2020 14:47:57] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[01/May/2020 14:47:57] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[01/May/2020 14:47:57] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[01/May/2020 14:47:57] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[01/May/2020 14:47:57] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[01/May/2020 14:47:57] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[01/May/2020 14:47:57] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[01/May/2020 14:47:57] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[01/May/2020 14:56:57] "GET /OnlineClass/3/ HTTP/1.1" 200 15229
+[01/May/2020 14:57:15] "DELETE /OnlineClass/3/ HTTP/1.1" 200 15045
+[01/May/2020 14:57:21] "GET /OnlineClass/1 HTTP/1.1" 301 0
+[01/May/2020 14:57:21] "GET /OnlineClass/1/ HTTP/1.1" 200 15350
+/home/sai-girish/online_class/online_class_project/online_class_app/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/sai-girish/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/sai-girish/anaconda3/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/base.py", line 395, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/sai-girish/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/sai-girish/online_class/online_class_project/online_class_project/urls.py", line 24, in <module>
+    from online_class_app.views import OnlineClassView
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/views.py", line 4, in <module>
+    from online_class_app.serializers import OnlineClassSerializer
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/serializers.py", line 5, in <module>
+    from online_class_app.model import OnlineClass
+ModuleNotFoundError: No module named 'online_class_app.model'
+
+/home/sai-girish/online_class/online_class_project/online_class_app/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/sai-girish/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/sai-girish/anaconda3/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/base.py", line 395, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sai-girish/online_class/online_class_env/lib/python3.7/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/sai-girish/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/sai-girish/online_class/online_class_project/online_class_project/urls.py", line 24, in <module>
+    from online_class_app.views import OnlineClassView
+  File "/home/sai-girish/online_class/online_class_project/online_class_app/views.py", line 4, in <module>
+    from online_class_app.serializers import OnlineClassSerializer, OnlineClassModelSerializer
+ImportError: cannot import name 'OnlineClassModelSerializer' from 'online_class_app.serializers' (/home/sai-girish/online_class/online_class_project/online_class_app/serializers.py)
+
+/home/sai-girish/online_class/online_class_project/online_class_app/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 01, 2020 - 15:08:50
+Django version 3.0.5, using settings 'online_class_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[01/May/2020 15:08:53] "GET /OnlineClass/ HTTP/1.1" 200 13920
+[01/May/2020 15:08:56] "GET /OnlineClass/ HTTP/1.1" 200 13920
+[01/May/2020 15:09:32] "POST /OnlineClass/ HTTP/1.1" 201 13873
+[01/May/2020 15:10:30] "POST /OnlineClass/ HTTP/1.1" 201 13873
+[01/May/2020 15:10:43] "GET /OnlineClass/2 HTTP/1.1" 301 0
+Not Found: /OnlineClass/2/
+[01/May/2020 15:10:43] "GET /OnlineClass/2/ HTTP/1.1" 404 15084
+[01/May/2020 15:10:50] "GET /OnlineClass/3 HTTP/1.1" 301 0
+Not Found: /OnlineClass/3/
+[01/May/2020 15:10:50] "GET /OnlineClass/3/ HTTP/1.1" 404 15084
+[01/May/2020 15:10:55] "GET /OnlineClass/1/ HTTP/1.1" 200 15343
+[01/May/2020 15:11:04] "GET /OnlineClass/ HTTP/1.1" 200 14270
+Bad Request: /OnlineClass/
+[01/May/2020 15:11:35] "POST /OnlineClass/ HTTP/1.1" 400 13893
+^C(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/onne_class/online_class_project$ python manage.py shell
+Python 3.7.4 (default, Aug 13 2019, 20:35:49) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from online_class_app.serializers import OnlineClassSeriali
+   ...: zer, OnlineClassModelSerializer                            
+
+In [2]: online_class_obj.data = { 
+   ...: "name" : "Abc", 
+   ...: "avg_marks": 81.2, 
+   ...: "address" : "Bangalore" 
+   ...: }                                                          
+-------------------------------------------------------------------
+NameError                         Traceback (most recent call last)
+<ipython-input-2-e0d55a90afd5> in <module>
+      2 "name" : "Abc",
+      3 "avg_marks": 81.2,
+----> 4 "address" : "Bangalore"
+      5 }
+
+NameError: name 'online_class_obj' is not defined
+
+In [3]: online_class_obj_data = { 
+   ...: "name" : "Abc", 
+   ...: "avg_marks": 81.2, 
+   ...: "address" : "Bangalore" 
+   ...: }                                                          
+
+In [4]: serializer = OnlineClassSerializer(data = online_class_obj_
+   ...: data)                                                      
+
+In [5]: serializer                                                 
+Out[5]: 
+OnlineClassSerializer(data={'name': 'Abc', 'avg_marks': 81.2, 'address': 'Bangalore'}):
+    name = CharField(required=True)
+    age = IntegerField(required=False)
+    avg_marks = FloatField(required=False)
+    address = CharField(required=False)
+
+In [6]: serializer.is_valid()                                      
+Out[6]: True
+
+In [7]: serializer = OnlineClassModelSerializer(data = online_class
+   ...: _obj_data)                                                 
+
+In [8]: serializer.is_valid()                                      
+Out[8]: True
+
+In [9]: serializer = OnlineClassSerializer(data = online_class_obj_
+   ...: data)                                                      
+
+In [10]: if serializer.is_valid() : 
+    ...:     serializer.save() 
+    ...:                                                           
+-------------------------------------------------------------------
+NotImplementedError               Traceback (most recent call last)
+<ipython-input-10-3e264b4cf508> in <module>
+      1 if serializer.is_valid() :
+----> 2     serializer.save()
+
+~/online_class/online_class_env/lib/python3.7/site-packages/rest_framework/serializers.py in save(self, **kwargs)
+    210             )
+    211         else:
+--> 212             self.instance = self.create(validated_data)
+    213             assert self.instance is not None, (
+    214                 '`create()` did not return an object instance.'
+
+~/online_class/online_class_env/lib/python3.7/site-packages/rest_framework/serializers.py in create(self, validated_data)
+    165 
+    166     def create(self, validated_data):
+--> 167         raise NotImplementedError('`create()` must be implemented.')
+    168 
+    169     def save(self, **kwargs):
+
+NotImplementedError: `create()` must be implemented.
+
+In [11]: serializer = OnlineClassModelSerializer(data = online_clas
+    ...: s_obj_data)                                               
+
+In [12]: if serializer.is_valid() : 
+    ...:     serializer.save() 
+    ...:                                                           
+
+In [13]: exit                                                      
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 01, 2020 - 15:18:56
+Django version 3.0.5, using settings 'online_class_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Bad Request: /OnlineClass/
+[01/May/2020 15:19:03] "POST /OnlineClass/ HTTP/1.1" 400 13893
+[01/May/2020 15:19:11] "GET /OnlineClass/ HTTP/1.1" 200 14445
+[01/May/2020 15:19:41] "GET /OnlineClass/1/ HTTP/1.1" 200 15343
+Not Found: /OnlineClass/2/
+[01/May/2020 15:20:16] "GET /OnlineClass/2/ HTTP/1.1" 404 15084
+Not Found: /OnlineClass/3/
+[01/May/2020 15:20:21] "GET /OnlineClass/3/ HTTP/1.1" 404 15084
+[01/May/2020 15:20:27] "GET /OnlineClass/4/ HTTP/1.1" 200 15208
+[01/May/2020 15:20:31] "GET /OnlineClass/5/ HTTP/1.1" 200 15208
+[01/May/2020 15:20:47] "DELETE /OnlineClass/5/ HTTP/1.1" 200 15038
+[01/May/2020 15:21:00] "OPTIONS /OnlineClass/5/ HTTP/1.1" 200 15401
+Not Found: /OnlineClass/5/
+[01/May/2020 15:21:49] "GET /OnlineClass/5/?format=json HTTP/1.1" 404 23
+Not Found: /OnlineClass/5/
+[01/May/2020 15:21:53] "GET /OnlineClass/5/ HTTP/1.1" 404 15084
+[01/May/2020 15:24:10] "OPTIONS /OnlineClass/5/ HTTP/1.1" 200 15401
+[01/May/2020 15:28:37] "GET /OnlineClass/1/ HTTP/1.1" 200 15343
+[01/May/2020 15:28:45] "PUT /OnlineClass/1/ HTTP/1.1" 200 15343
+/home/sai-girish/online_class/online_class_project/online_class_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 01, 2020 - 15:29:57
+Django version 3.0.5, using settings 'online_class_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+(online_class_env) (base) sai-girish@saigirish-Inspiron-5559:~/online_class/online_class_project$ 
