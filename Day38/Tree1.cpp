@@ -78,12 +78,100 @@ int replaceNodeWithSum(Node* root) {
     return root->data += leftSum + rightSum;
 }
 
+void leftview(Node* root) {
+    if(root == NULL)
+        return;
+    
+}
+
+void leftview(Node* root, int level, int &max_level) {
+    if(root == NULL)
+        return;
+    if(level > max_level) {
+        cout << root->data << " ";
+        max_level = level;
+    }
+    leftview(root->left, level + 1, max_level);
+    leftview(root->right, level + 1, max_level);
+}
+
+void rightview(Node* root, int level, int &max_level) {
+    if(root == NULL)
+        return;
+    if(level > max_level) {
+        cout << root->data << " ";
+        max_level = level;
+    }
+    rightview(root->right, level + 1, max_level);
+    rightview(root->left, level + 1, max_level);
+}
+
+void distinctLevel(Node* root) {
+    queue<Node*> q;
+    q.push(root);
+    q.push(NULL);
+    while(!q.empty()) {
+        Node* front = q.front();
+        q.pop();
+        if(front != NULL) {
+            //cout << front->data << " "; //[For Left View]
+            while(front != NULL) {
+                cout << front->data << " ";
+                if(front->left)
+                    q.push(front->left);
+                if(front->right)
+                    q.push(front->right);
+                front = q.front();
+                q.pop();
+            }
+            cout << endl;
+            q.push(NULL); // present level is completely traversed
+        }
+    } 
+}
+
+
+void zigzagtraversal(Node* root) {
+    stack<Node*> currLevel, nextLevel;
+    bool leftToRight = true;
+    currLevel.push(root);
+    while(!currLevel.empty() || !nextLevel.empty()) {
+        Node* top = currLevel.top();
+        cout << top->data << " ";
+        if(leftToRight == true) {
+            if(top->left) 
+                nextLevel.push(top->left);
+            if(top->right)
+                nextLevel.push(top->right);
+        }
+        else {
+            if(top->right)
+                nextLevel.push(top->right);
+            if(top->left)
+                nextLevel.push(top->left);
+        }
+        if(currLevel.empty() == true) {
+            leftToRight = !leftToRight;
+        }
+    }
+}
+
+
 int main() {
     Node* root = buildTree();
-    preOrder(root);
-    cout << "\nCount : " << countNumberOfNodes(root) << endl;
-    cout << "Height : " << height(root) << endl;
-    replaceNodeWithSum(root);
-    levelOrderTraversal(root);
+    int maxLevel = 0;
+    leftview(root, 1, maxLevel);
+    cout << endl;
+    maxLevel = 0;
+    rightview(root, 1, maxLevel);
+    cout << endl;
+    distinctLevel(root);
+    cout << endl;
+    zigzagtraversal(root);
+    // preOrder(root);
+    // cout << "\nCount : " << countNumberOfNodes(root) << endl;
+    // cout << "Height : " << height(root) << endl;
+    // replaceNodeWithSum(root);
+    // levelOrderTraversal(root);
     return 0;
 }
